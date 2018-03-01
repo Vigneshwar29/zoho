@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a[1000],n,num,flag=0,i;
+    int a[1000],n,num,i;
     scanf("%d",&num);
     scanf("%d",&n);
     for(i=0;i<n;i++)
@@ -14,11 +14,10 @@ int main()
         if(a[i]==num) 
         {
             printf("%d",i); 
-            flag=1;
             break;
         }
     }
-    if(flag==0)
+    if(i==n)
     {
        printf("-1");
     }
