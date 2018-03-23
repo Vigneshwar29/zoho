@@ -3,17 +3,17 @@
 int main() 
 {    
     int n,b,i=0,a[10];
-	scanf("%d %d",&n,&b);
-	while(n>0)
-	{
+    scanf("%d %d",&n,&b);
+    while(n>0)
+    {
         a[i]=n%b;
-	    n=n/b;
-	    i++;
-	}
-  i--;
-	while(i>=0)
-   {
+	n=n/b;
+	i++;
+    }
+    i--;
+    while(i>=0)
+    {
         printf("%d",a[i]);
         i--;
-   }
+    }
 }
