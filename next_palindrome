@@ -1,11 +1,16 @@
 #include <stdio.h>
-
+void rev(int m);
 int main()
 {
-    int n,temp,rem,rev=0;
-    scanf("%d",&n);
-    n++;
-    while(rev!=n)
+    int n;
+    scanf("%d", &n);
+    n=n+1;
+    rev(n);
+}
+void rev(int n)
+{
+    int temp,rem,rev;
+    while(1)
     {
         temp=n;
         while(temp>0)
